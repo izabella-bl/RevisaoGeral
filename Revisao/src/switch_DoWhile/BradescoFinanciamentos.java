@@ -6,7 +6,10 @@ public class BradescoFinanciamentos {
 
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        menu();
+    }
 
+    static void menu(){
         System.out.println("----------------Bem vindo ao Bradesco Financiemnto!--------------------");
         boolean novamente = true;
         do {
@@ -15,7 +18,7 @@ public class BradescoFinanciamentos {
             int op = Integer.parseInt(sc.nextLine());
             System.out.println("\n");
 
-            switch (op){
+            switch (op) {
                 case 1:
                     System.out.println("Crédito Pessoal");
                     novamente = retição();
@@ -37,7 +40,7 @@ public class BradescoFinanciamentos {
                     novamente = true;
                     break;
             }
-        }while (novamente);
+        } while (novamente);
     }
 
     static boolean retição( ){
